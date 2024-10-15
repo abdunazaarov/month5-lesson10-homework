@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e1bee7, #a3a3a3);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+select {
+    padding: 10px 15px;
+    width: 290px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    background-color: rgba(255, 255, 230, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    width: 240px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* background: linear-gradient(to right, #e1bee7, #feb47b, rgb(205, 145, 211));
+    margin: 0; */
+    /* background: linear-gradient(90deg, #110, #001); */
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.product p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.seeMore {
+    display: block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #81d4fa, #ba68c8);
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+}
+
+.seeMore:hover {
+    background: linear-gradient(135deg, #4fc3f7, #ab47bc);
+}
+
+.details {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.details h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.details img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.review {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.review strong {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.review span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
