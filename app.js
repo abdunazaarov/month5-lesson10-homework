@@ -22,7 +22,7 @@ function renderProducts() {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
         productDiv.innerHTML = `
-            <img src="${product.thumbnail}" alt="${product.title}">
+            <img src="${product.thumbnail}"">
             <h3>${product.title}</h3>
             <p>Price: $${product.price}</p>
             <p>Category: ${product.category}</p>
